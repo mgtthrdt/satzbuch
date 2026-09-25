@@ -2,7 +2,7 @@
 // ACHTUNG: CacheStorage gilt für die ganze Origin mgtthrdt.github.io (auch W&B-Tool, Checklisten) —
 // daher nur EIGENE Caches (Präfix "satzbuch-") löschen und nur im eigenen Cache nachsehen.
 const PREFIX = "satzbuch-";
-const CACHE = PREFIX + "v1.0.0";
+const CACHE = PREFIX + "v1.1.0";
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
