@@ -5,7 +5,7 @@
 // werden daraus bedient (bis v1.3.0 lag es doppelt, plus eine Kopie je Query-String). Andere Dateien: Schlüssel ohne Query.
 // version.json (Update-Prüfung der App) geht immer ans Netz und wird nie gecacht.
 const PREFIX = "satzbuch-";
-const CACHE = PREFIX + "v1.4.0";
+const CACHE = PREFIX + "v1.4.1";
 const SCOPE = new URL(self.registration.scope);
 const DOC = new URL("index.html", SCOPE).href;
 const ASSETS = ["index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"].map(u => new URL(u, SCOPE).href);
